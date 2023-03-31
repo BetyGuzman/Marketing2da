@@ -1,0 +1,630 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #181A20;
+  font-family: 'Heebo', sans-serif;
+}
+/*H E A D E R*/
+.H{
+  min-height: screen;
+  font-size: 300;
+  height: 10vh;
+  color: rgba(193, 184, 184, 0.664);
+  background: #181A20;
+  padding-top: 14px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+
+.H  ul{
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.H  .Hul{
+  list-style: none;
+}
+.H .Hul img{
+  width: 4rem;
+}
+.H  ul li a,
+.H  ul li span{
+  color: rgb(193, 184, 184, 0.664);
+  margin: 5 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.H .Hulli:hover{
+  color: #E58D27;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.H .HIul {
+  list-style: none;
+}
+.H .HIulli li{
+  color: rgb(193, 184, 184, 0.664);
+}
+.H .HIulli{
+  filter: invert(1);
+  font-size:18px;
+  border-radius: 10%;
+  border-color: #181a2000;
+}
+.H .HIulli:hover{
+  background-color:  #bb7b329b;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  filter: invert(0);
+}
+
+/*B A N N E R*/
+.B {
+  padding: 5%;
+  width: 100%;
+  min-height: 90vh;
+ background: url(./img/ansioso.gif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.B h2{
+  color: #fff;
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.B h2 span{
+  color: rgba(18, 102, 191, 0.669);
+}
+
+/*A B O U T*/
+
+.A{
+  background: linear-gradient(
+      rgb(122, 205, 247),
+      rgb(163, 163, 255),
+      rgb(189, 174, 252),
+      rgb(241, 170, 246)
+  );
+  padding: 100px;
+  min-height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+}
+
+.A .aboutContent{
+  text-align: center;
+  height: 100%;
+  width: 950px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.825);
+  border-radius: 5%;
+  border: 3px solid  #CCFF00;
+
+}
+.A .card{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.A h4{
+  color: rgb(0, 52, 196);
+  font-size: small;
+  margin: 0;
+}
+.A p{
+  padding: 2%;
+  font-size: large;
+  text-align: justify;
+  margin: 0;
+}
+.A img{
+  float: right;
+  width: 400px;
+  border-radius: 50%;
+}
+/*A B O U T  D E S C R I P T I O N*/
+.AD{
+  padding: 5%;
+  width: 100%;
+  min-height: 90vh;
+  background: #181A20;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.AD .aboutdContent h2,
+.AD .aboutdContent p{
+  color: #fff;
+}
+.AD .aboutdContent p{
+  
+  padding: 3%;
+  line-height: 40px; 
+  font-size: large;
+  text-align: justify;
+  margin: 0;
+}
+.AD .imagen{
+  width: 400px;
+  height: 300px;
+}
+.AD .imagendos{
+  width: 900px;
+  height: 500px;
+  border: 2px solid white;
+}
+.AD  img{
+  display:block;
+  margin:auto;
+}
+
+
+/*S E R V I C E S*/
+
+.SE{
+  display: grid;
+  grid-gap: 5px;
+  max-width: 10%;
+  margin-top: 5px;
+
+}
+.SE .titleServices{
+  color: white;
+  margin-left: 5%;
+}
+.SE .servicesContent{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+  max-width: 10%; 
+  margin-left: 10%;
+  margin-top: 5px;
+}
+.SE .box{
+  height: 100%;
+  width: 300px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  border: 6px solid rgba(253, 249, 0, 0.361);
+}
+.SE .box:hover{
+  
+transform: rotate(-5deg);
+  transition: 0.2s;
+  border: 13px solid rgb(115, 115, 240);
+  border-radius: 10%;
+  background: linear-gradient(
+      rgb(116, 1, 202),
+      rgb(184, 184, 230),
+      rgb(184, 184, 220),
+      rgb(184, 184, 210)
+  );
+}
+
+.SE .box .imgServices{
+  margin-top: 30px; 
+  max-width: 360px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.SE img{
+  width: 150px;    
+  height: 140px; 
+}
+
+.SE .box h2{
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.SE .box p{
+  text-align: justify;
+}
+/*S E R V I C E S   D E S C R I P T I O N*/
+
+.SD{
+  background: url("./img/marketingdigitalabout.jpg");
+  padding: 100px;
+  min-height: 88vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.SD .sdContent{
+  text-align: center;
+  width: 550px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.825);
+  border-radius: 5%;
+  border: 2px solid  #CCFF00;
+}
+.SD .cardservices{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.SD h3{
+  font-size: 30px;
+}
+.SD p{
+  padding: 2%;
+  font-size: large;
+  text-align: justify;
+  margin: 0;
+}
+.SD img{
+  float: right;
+  width: 400px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+/*T E A M*/
+.T{
+  /*background: url("./img/digital.png") left top repeat-y,
+  hwb(205 45% 17% / 0.462) url("./img/diseñoGrafico.png") right top repeat-y;*/
+padding: 0 70px;
+margin: 10px;
+margin-top: 40px;
+}
+.T .card{
+  color: #fff;
+}
+.T .teamBx{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.T .teamBx .member{
+  position: relative;
+  min-height: 250px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 40, 161);
+}
+
+.T .teamBx .member .img{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.T .teamBx .member .imgBx img{
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.T .teamBx .member .details{
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #000;
+  transition: 0.2s;
+  opacity: 0;
+
+}
+
+.T .teamBx .member .details h2{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.T .teamBx .member .details h2 span{
+  font-size: 10px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 200;
+}
+
+.T .teamBx .member .details:hover{
+  border-radius: 50%;
+  opacity: 1;   
+}
+
+/*T E A M   D E S C R I P T I O N*/
+.TD{
+  background: url("./img/teamfondo.jpg");
+  background-size: 100%;
+  padding: 100px;
+  min-height: 88vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+.TD h3{
+  font-size: 50px;
+  color: #f1ecec;
+  font-style: bold;
+  text-align: center;
+}
+.TD p{
+  font-size: 40px;
+  text-align: justify;
+  margin: 0;
+  color: white;
+  font-style:oblique;
+  border: #CCFF00;
+}
+
+
+
+
+
+
+
+
+
+/*F O O T E R*/
+
+.F{
+  background: linear-gradient(
+      rgb(24, 26, 32),
+      rgba(77, 77, 102, 0.635),
+      rgba(109, 109, 140, 0.759),
+      rgba(255, 255, 255, 0.729)
+  );
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.ftittle{
+  border-bottom: 1px solid #ff14e4 ;
+  padding-bottom: 20px;
+  color:white;
+}
+.ftxt{
+  color: antiquewhite;
+  text-align: justify;
+}
+
+.fsection ul{
+  list-style:none;
+}
+.footer__link{
+  color: antiquewhite;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.footer__input{
+  background: rgba(31, 18, 18, 0.479);
+  color: #fffeff;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.copy{
+  color: #f1ecec;
+  
+  grid-column-start: span 3;
+  text-align: center;
+}
+
+.sci{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+  padding-right: 5em; 
+
+}
+.scim{
+  width: 70px;
+}
+.scimv{
+  width: 30px;
+}
+
+.sci ul{
+  font-size: 30px;
+  display: flex;
+  list-style: none;
+}
+.sci ul li a{
+  margin: 0 30px;
+  color:white;
+  border-color: 2px solid #000;
+}
+
+.scim ul li a img{
+  height: 60px;
+  width: 60px;
+}
+
+.scim ul li a:hover img{
+  opacity: 0.5;
+}
+
+.scim ul{
+  display: flex;
+  list-style: none;
+}
+.scim ul li a{
+  margin: 0 20px;
+}
+
+
+.scim ul li a:hover img{
+  opacity: 0.5;
+}
+
+#map {
+  outline: 2px solid white;
+  margin: 1em auto;
+  width: 500px;
+  height: 200px;
+}
+
+#map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/*C O N T A C T*/
+
+.contact{
+  height: 98vh;
+  margin-top: 40px;
+  background: linear-gradient(
+      rgb(24, 26, 32),
+      rgba(77, 77, 102, 0.635),
+      rgba(36, 36, 50, 0.759),
+      rgba(10, 1, 1, 0.729)
+  );
+}
+.formulario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mxw800pc h3{
+  color: rgb(199, 152, 152);
+  font-size: 30px;
+  text-align: center;
+  
+}
+.mxw800pc p{
+  color: rgb(253, 241, 241);
+  text-align: center;
+}
+
+.row100 .inputBx100 p{
+  color:rgb(236, 227, 214);;
+}
+.formulario label{
+  display: block;
+    color: rgb(236, 227, 214);
+    font-weight: 500;
+    padding: 8px;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.formulario input{
+  width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    height: 55px;
+    color: white;
+    line-height: 35px;  
+    padding: 0 30px 0 10px; 
+    transition: 0,5s ease all;
+    border-top: 1px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.formulario textarea{
+  width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    height: 55px;
+    color: white;
+    line-height: 35px;  
+    padding: 0 30px 0 10px; 
+    transition: 0,5s ease all;
+    border-top: 1px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.row100 .sel select{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(255, 255, 255);
+  height: 55px;
+  border: none;
+  outline: none;
+  background-clip: padding-box;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 2px;
+}
+.formulario .btnF {
+  height: 45px;
+    line-height: 45px;
+    width: 40%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.row100 .sel select:hover{
+  
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+}
+
+.formulario .btnFD{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 2;
+}
